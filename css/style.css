@@ -1,0 +1,58 @@
+* {
+    background: #000;
+    color: #fff;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+h1 {
+    color: #fff;
+    font-size: 3em;
+}
+
+h2 {
+    color: #fff;
+}
+
+
+#busContainer {
+    display: inline-block;
+    text-align: center;
+    padding-top: 20px;
+}
+
+#bus {
+    position: relative;
+    display: inline-block;
+}
+
+#bus > img {
+    z-index: 1;
+}
+
+#bus > span {
+    background: #FFF;
+    color: #000;
+    font-size: 1.5em;
+    font-weight: bold;
+    position: absolute;
+    top: 40%;
+    left: 45%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
+
+#busContainer > p {
+    font-size: 1.25em;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+#weatherContainer {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.smaller {
+    font-size: 80%;
+    padding-left: 3px;
+}

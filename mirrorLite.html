@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mirror2</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/weather-icons.min.css">
+    <link rel="stylesheet" type="text/css" href="css/weather-icons-wind.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="js/bus.js"></script>
+    <script type="text/javascript" src="js/weather.js"></script>
+    <script type="text/javascript" src="js/user.js"></script>
+    <script type="text/javascript" src="js/mainLoop.js"></script>
+</head>
+<body>
+    <div>
+        <h1 id="labelTime">12:42</h1>
+    </div>
+    <div id="weatherContainer">
+        <i class="" id="iconWeather"></i>
+        <span id="labelTemp">xx</span><span class="smaller">&deg;F</span>
+    </div>
+    <div>
+        <div id="busContainer">
+            <div id="bus">
+                <img src="img/bus-silhouette.png" id="imgBus" width="200px"/>
+                <span id="labelBusEta">ETA</span>
+            </div>
+            <p id="labelBusName">Name</p>
+        </div>
+    </div>
+        <!--<h1 id="labelName">Good day!</h1>-->
+        <!--<img id="img" src=""/>-->
+</body>
+</html>
