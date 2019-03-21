@@ -23,10 +23,12 @@ function updateBusTime() {
             "Access-Control-Allow-Origin": "*"
         },
         success : function(result) {
+            document.getElementById("busContainer").style.color = '#000';
             busCallback(result.data);
         },
         error : function(result) {
             console.log("ERROR: could not get bus update");
+            document.getElementById("busContainer").style.color = '#f00';
         }
     });
 }

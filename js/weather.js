@@ -6,10 +6,12 @@ function updateWeather() {
         type : "GET",
         url : weatherUrl,
         success : function(result) {
+            document.getElementById("weatherContainer").style.color = '#000';
             weatherCallback(result);
         },
         error : function(result) {
             console.log("ERROR: could not get weather update");
+            document.getElementById("weatherContainer").style.color = '#f00';
         }
     });
 }
