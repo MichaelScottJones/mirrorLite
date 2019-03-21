@@ -21,7 +21,8 @@ function weatherCallback(data) {
     temp = (temp - 273.15) * (9/5) + 32;
     document.getElementById("labelTemp").firstChild.nodeValue = "" + Math.round(temp);
     var icon = "";
-    switch(data.weather[0].main) {
+    var cond = data.weather[0].main;
+    switch(cond) {
         case "Haze":
             icon = "wi wi-fog";
             break;
@@ -44,7 +45,7 @@ function weatherCallback(data) {
         //     icon = "wi ";
         //     break;
         default:
-            console.log("no icon")
+            console.log("no icon for " + cond)
             break;
     }
     document.getElementById("iconWeather").className = icon;
