@@ -36,7 +36,11 @@ function weatherCallback(data) {
             icon = "wi wi-snow";
             break;
         case "Clear":
-            icon = "wi wi-day-sunny";
+            if (isDaytime()) {
+                icon = "wi wi-day-sunny";
+            } else {
+                icon = "wi wi-night-sunny";
+            }
             break;
         // case "":
         //     icon = "wi ";
@@ -49,4 +53,12 @@ function weatherCallback(data) {
             break;
     }
     document.getElementById("iconWeather").className = icon;
+}
+
+
+// *********************** HELPER FUNCTIONS *****************************
+
+function isDaytime() {
+    var time = new Date().getHours();
+    return time > 6 && time < 18;
 }
