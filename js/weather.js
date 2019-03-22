@@ -41,15 +41,15 @@ function weatherCallback(data) {
             if (isDaytime()) {
                 icon = "wi wi-day-sunny";
             } else {
-                icon = "wi wi-night-sunny";
+                icon = "wi wi-night-clear";
             }
             break;
-        // case "":
-        //     icon = "wi ";
-        //     break;
-        // case "":
-        //     icon = "wi ";
-        //     break;
+        case "Mist":
+            icon = "wi wi-fog";
+            break;
+        case "Drizzle":
+            icon = "wi wi-sprinkle";
+            break;
         default:
             console.log("no icon for " + cond)
             break;
